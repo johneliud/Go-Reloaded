@@ -46,7 +46,7 @@ https://go.dev/doc/install
 
 2. Navigate into the go-reloaded directory:
    ```
-   $ cd go-reloaded
+   $ cd Go-Reloaded
    ```
 
 ## Usage
