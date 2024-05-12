@@ -51,6 +51,8 @@ https://go.dev/doc/install
 
 ## Usage
 
+**IMPORTANT NOTE:** Ensure your text editor's encoding settings is set to UTF-8. Other encoding formats might display error messages instead of the desired output.
+
 - You can the program with the following commands
 
   ```
