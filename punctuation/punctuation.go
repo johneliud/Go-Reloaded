@@ -14,7 +14,9 @@ func CheckPunctuation(words []string) []string {
 			// Swap positions
 			wordRune[i+1], wordRune[i] = wordRune[i], wordRune[i+1]
 		}
+	}
 
+	for i := 0; i < len(wordRune)-1; i++ {
 		// Last apostrophe
 		if unicode.IsPunct(wordRune[i+1]) && wordRune[i] == ' ' && wordRune[i+1] == '\'' {
 			wordRune[i+1], wordRune[i] = wordRune[i], wordRune[i+1]
