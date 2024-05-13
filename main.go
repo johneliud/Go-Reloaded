@@ -31,6 +31,11 @@ func main() {
 			return
 		}
 
+		if len(sampleTxt) == 0 {
+			fmt.Println("File to read from is empty!")
+			return
+		}
+
 		sliceOfWords = strings.Split(string(sampleTxt), " ")
 
 		// Pass the sliceOfWords to various appropriate functions
@@ -43,7 +48,7 @@ func main() {
 		sliceOfWords = punctuation.CheckPunctuation(sliceOfWords)
 		sliceOfWords = apostrophe.CheckApostrophe(sliceOfWords)
 
-		joinedWords = strings.Join(sliceOfWords, " ")
+		joinedWords = strings.Join(sliceOfWords, " ") + "\n"
 
 		resultTxt, err = os.Create(arguments[1])
 		if err != nil {
@@ -63,6 +68,11 @@ func main() {
 			return
 		}
 
+		if len(sampleTxt) == 0 {
+			fmt.Println("File is read from is empty!")
+			return
+		}
+
 		sliceOfWords = strings.Split(string(sampleTxt), " ")
 
 		// Pass the sliceOfWords to various appropriate functions
@@ -75,7 +85,7 @@ func main() {
 		sliceOfWords = punctuation.CheckPunctuation(sliceOfWords)
 		sliceOfWords = apostrophe.CheckApostrophe(sliceOfWords)
 
-		joinedWords = strings.Join(sliceOfWords, " ")
+		joinedWords = strings.Join(sliceOfWords, " ") + "\n"
 
 		resultTxt, err = os.Create("result.txt")
 		if err != nil {
