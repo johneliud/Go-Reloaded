@@ -10,7 +10,6 @@ func Capitalize(words []string) []string {
 	for i := 0; i < len(words); i++ {
 		if words[i] == "(cap)" {
 			words[i-1] = CapitalizeFirstLetter(words[i-1])
-			fmt.Println(words[i-1])
 			words = append(words[:i], words[i+1:]...)
 		} else if words[i] == "(cap," {
 			convertedInteger, err := strconv.Atoi(words[i+1][:len(words[i+1])-1])
