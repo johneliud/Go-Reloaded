@@ -28,7 +28,7 @@ func main() {
 		}
 		defer sampleTxt.Close()
 
-		// Variable fileDetails contains statistics/properties associated the input file
+		// Variable fileDetails contains statistics/properties associated with the input file
 		fileDetails, err := os.Stat(arguments[0])
 		if err != nil {
 			fmt.Println("Error opening input file!", err)
